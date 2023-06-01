@@ -45,9 +45,12 @@ beforebuttonelement.addEventListener('click', function(){
 
     imageElements[currentIndex].classList.remove('active');
     
-    if(currentIndex === images.length + 1){
-        currentIndex = imagecontent.length;
+    if(currentIndex < 1 ){
+
+        currentIndex = images.length - 1;
+
     }else{
+
         currentIndex--
     }
         
