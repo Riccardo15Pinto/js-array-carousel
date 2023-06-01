@@ -17,8 +17,8 @@ let imagecontentmin = '';
 //per ogni elemento dell array creo un tag img
 //per ogni elemento dell array creo un tag div>img
 for(let i = 0; i < images.length; i++){
-    imagecontent += `<img src="${images[i]}" class="none">`;
-    imagecontentmin += `<div class="opacity"><img src="${images[i]}"></div>`;
+    imagecontent += `<img src="${images[i]}" class="none border">`;
+    imagecontentmin += `<div class="opacity "><img src="${images[i]}" class="border"></div>`;
 }
 
 //inserisco le immagini nel DOM
