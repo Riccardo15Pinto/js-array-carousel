@@ -72,3 +72,11 @@ img{
 .opacity{
     opacity: 0.3;
 }
+
+.active{
+    display: block;
+}
+
+#main-gallery img{
+    display: none;
+}
