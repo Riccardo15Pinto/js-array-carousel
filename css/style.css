@@ -8,22 +8,41 @@
 
 /* Genereics */
 
+body{
+    background-image: url("https://as1.ftcdn.net/v2/jpg/04/01/28/32/1000_F_401283229_fxNg0WqseHRH5qGuhHi89iYrCILDdTx9.jpg");
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 40px 0;
+}
+
+span{
+    color: red;
+}
+
+/* Main-content */
+
 #carousel{
     background-color: rgb(0, 0, 0);
-    height: 500px;
-    width: 1000px;
-    margin: 200px auto;
+    height: 600px;
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 40px;
 }
 
 .container-gallery-top{
-    height: 100%;
-    border: 2px dashed white;
     height: 70%;
 }
 
 .container-gallery-bottom{
-    height: 100%;
-    border: 2px dashed red;
     height: 30%;
     position: relative;
 }
@@ -38,35 +57,41 @@
     position: absolute;
     translate: 0 -50%;
     font-size: 2rem;
-    color: white;
-    opacity: 0.3;
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
-#left-side{
-    top: 50%;
-    margin-left: 10px;
+.container-gallery-bottom #left-side{
+    bottom: -50%;
+    left: 45%;
+    margin-right: 20px;
 }
 
-#right-side{
-    top: 50%;
-    right: 0;
-    margin-right: 10px;
+.container-gallery-bottom #right-side{
+    bottom: -50%;
+    right: 45%;
+    margin-left: 20px;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.flex{
-    display: flex;
+#main-gallery{
+    padding: 10px;
 }
 
 #second-gallery div{
     height: 100%;
     flex-basis: calc(100% / 5);
+    padding: 10px;
+}
+
+.bi{
+    color: white;
+    padding: 0 10px;
+}
+
+/* Utility */
+
+.flex{
+    display: flex;
 }
 
 .opacity{
@@ -79,4 +104,8 @@ img{
 
 .active{
     display: block;
+}
+
+.border{
+    border-radius: 30px;
 }
