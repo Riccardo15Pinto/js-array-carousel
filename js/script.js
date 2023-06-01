@@ -20,9 +20,8 @@ const imageElements = document.querySelectorAll('img');
 //preparo la gestione dell'index
 let currentIndex = 0;
 //impostiamo la prima immagine come quella attiva
-imageElements[currentIndex].classList.add('active');
 
-
+console.log(imageElements)
 
 afterbuttonelement.addEventListener('click', function(){
 
