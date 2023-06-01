@@ -28,47 +28,68 @@ secondgalleryelement.innerHTML = imagecontentmin ;
 //recupero tutte le immagini
 const imageElements = document.querySelectorAll('#main-gallery img');
 const imageElementsmin = document.querySelectorAll('#second-gallery div');
+
 //preparo la gestione dell'index
 let currentIndex = 0;
+
 //impostiamo la prima immagine come quella attiva
 imageElements[currentIndex].classList.add('active');
+
 //impostiamo la prima immagine senza l'opacity
 imageElementsmin[currentIndex].classList.remove('opacity');
+
 //metto l'orecchio in ascolto
 afterbuttonelement.addEventListener('click', function(){
+
     //rimuovo la classe active
     imageElements[currentIndex].classList.remove('active');
+
     //aggiungo la classe opacity
     imageElementsmin[currentIndex].classList.add('opacity');
+
     //---------------------------------------
+
     if(currentIndex === images.length - 1){
+
         //se
         currentIndex = 0;
+
     }else{
+
         //allora
         currentIndex++
     }
+
     //rimuovo la classe opacity
     imageElementsmin[currentIndex].classList.remove('opacity');
+
     //aggiungo la classe active
     imageElements[currentIndex].classList.add('active');
 })
+
 //metto l'orecchio in ascolto
 beforebuttonelement.addEventListener('click', function(){
+
     //rimuovo la classe active
     imageElements[currentIndex].classList.remove('active');
+
     //aggiungo la classe opacity
     imageElementsmin[currentIndex].classList.add('opacity');
+
     //---------------------------------------
+
     if(currentIndex < 1 ){
         //se
         currentIndex = images.length - 1;
+
     }else{
         //allora
         currentIndex--
     }
+
     //rimuovo la classe opacity
     imageElementsmin[currentIndex].classList.remove('opacity');
+    
     //aggiungo la classe active
     imageElements[currentIndex].classList.add('active');
 })
