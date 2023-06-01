@@ -1,0 +1,74 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Genereics */
+
+#carousel{
+    background-color: rgb(0, 0, 0);
+    height: 500px;
+    width: 1000px;
+    margin: 200px auto;
+}
+
+.container-gallery-top{
+    height: 100%;
+    border: 2px dashed white;
+    height: 70%;
+}
+
+.container-gallery-bottom{
+    height: 100%;
+    border: 2px dashed red;
+    height: 30%;
+    position: relative;
+}
+
+#main-gallery,
+#second-gallery{
+    height: 100%;
+}
+
+#left-side,
+#right-side{
+    position: absolute;
+    translate: 0 -50%;
+    font-size: 2rem;
+    color: white;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#left-side{
+    top: 50%;
+    margin-left: 10px;
+}
+
+#right-side{
+    top: 50%;
+    right: 0;
+    margin-right: 10px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.flex{
+    display: flex;
+}
+
+#second-gallery div{
+    height: 100%;
+    flex-basis: calc(100% / 5);
+}
+
+.opacity{
+    opacity: 0.3;
+}
