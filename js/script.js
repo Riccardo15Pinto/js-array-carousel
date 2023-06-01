@@ -16,11 +16,15 @@ for(let i = 0; i <= images.length; i++){
 //inserisco le immagini nel DOM
 firstgalleryelement.innerHTML = imagecontent ;
 //recupero tutte le immagini
-const imageElements = document.querySelectorAll('main-gallery img');
+const imageElements = document.querySelectorAll('img');
 //preparo la gestione dell'index
 let currentIndex = 0;
 //impostiamo la prima immagine come quella attiva
 imageElements[currentIndex].classList.add('active');
+
+
+
+
 afterbuttonelement.addEventListener('click', function(){
 
 });
