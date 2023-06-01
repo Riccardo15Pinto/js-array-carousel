@@ -11,7 +11,7 @@ const images = ['img/01.webp', 'img/02.webp', 'img/03.webp', 'img/04.webp', 'img
 let imagecontent = '';
 //per ogni elemento dell array creo un tag img
 for(let i = 0; i <= images.length; i++){
-    imagecontent += `<img src="${images[i]}"`;
+    imagecontent += `<img src="${images[i]}>"`;
 }
 //inserisco le immagini nel DOM
 firstgalleryelement.innerHTML = imagecontent ;
@@ -20,7 +20,6 @@ const imageElements = document.querySelectorAll('img');
 //preparo la gestione dell'index
 let currentIndex = 0;
 //impostiamo la prima immagine come quella attiva
-imageElements[currentIndex].classList.add('active');
 
 
 
