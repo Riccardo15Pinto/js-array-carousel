@@ -73,10 +73,10 @@ img{
     opacity: 0.3;
 }
 
-.active{
-    display: block;
+.none{
+    display: none;
 }
 
-#main-gallery img{
-    display: none;
+.active{
+    display: block;
 }
